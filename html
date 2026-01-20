@@ -3,39 +3,93 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>f-Facebok Page</title>
-    <style>
-
-    </style>
+    <title>Facebok Page</title>
 </head>
 <body id="full">
    <header>
 
    </header> 
-   <main id="main">
-    <a href="https://png.pngtree.com/element_our/20190601/ourmid/pngtree-file-download-icon-image_1344466.jpg"> Get Facebook for iOS and browse fast</a><hr>
+   <main class="main">
+    <img id="dwnld" src="https://png.pngtree.com/element_our/20190601/ourmid/pngtree-file-download-icon-image_1344466.jpg"><a id="fess" href=""> Get Facebook for iOS and browse fast</a><hr>
     <section class="info">
-        <p>Englisg (UK)</p>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiXN9xSEe8unzPBEQOeAKXd9Q55efGHGB9BA&s">
+        <p>English (UK)</p><br>
+        <img id="logo" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQiXN9xSEe8unzPBEQOeAKXd9Q55efGHGB9BA&s"><br>
         <label for="deets">
-            <input id="deets" type="text">
+            <input class="deets" type="text" placeholder="Mobile number or email address">
         </label><br>
-         <label for="pword">
-            <input id="pword" type="text">
+         <label for="deets">
+            <input class="deets" type="text" placeholder="Password">
         </label><br> 
-        <label for="btn">
-            <input id="btn" type="button">
+        <label for="deets">
+            <input class="deets" id="log" type="button" placeholder="Log in">
         </label><br>
-        <p>Forotten Password?</p>
+        <a id="reset">Forgotten Password?</a>
     </section>
     <section class="new">
-        <button>Create new account</button><br><br>
-        <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt2A2gxUuygCwnyVZKNiD1kHe32oGYuZrrPg&s">Meta<br><br>
+        <button class="deets">Create new account</button><br><br>
+        <img id="meta" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTt2A2gxUuygCwnyVZKNiD1kHe32oGYuZrrPg&s">Meta<br><br>
     </section>
    </main>
 </body>
-<footer>
-    <a href="">#About</a>
+<style>
+       #full{
+        background-color: rgb(221, 221, 233);
+        max-height: fit-content;
+       }
+       #fess{
+        color: rgb(63, 63, 219);
+       }
+       .main{
+        background-color: white;
+        width: 25%;
+        height: 50%;
+        display: flexbox;
+        align-items: center;
+       }
+       #dwnld{
+        width: 10px;
+        height: 10px;
+       }
+       p{
+        color: #999;
+        text-align: center;
+       }
+       :any-link{
+        text-decoration: none;
+       }
+       #logo{
+        border-radius: 50%;
+        width:15% ;
+        height: 15%;
+       }
+       [class^="deets"]{
+        width: 120px;
+        height: 20px;
+       }
+       #log{
+        color: white;
+        background-color: rgb(35, 35, 188);
+       }
+       #reset{
+        color: rgb(10, 9, 9);
+       }
+       button{
+        color: rgb(52, 52, 194);
+        border-color: rgb(47, 47, 225);
+       }
+       #meta{
+        width: 5%;
+        height: 2%;
+
+       }
+       .link{
+        color: #999;
+       }
+    </style>
+<footer class="link">
+    <a href=""> About</a> <span><a href=""> Help</a></span><span><a href=""> More</a></span>
+</footer>
+</html>
     <a href="">#Help</a>
     <a>More</a>
 </footer>
